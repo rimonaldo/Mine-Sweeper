@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body onload="init()">
+    <div class="difficulty">
+        <button onclick="chooseDiff(4)"><span>easy</span></button>
+        <button onclick="chooseDiff(8)"><span>medium</span></button>
+        <button onclick="chooseDiff(12)"><span>hard</span></button>
+    </div>
+    <div class="difficulty">
+        <button onclick="chooseDiff(12,true)"><span>space nuts</span></button>
+
+    </div>
+    <div class="modal-win"> you have saved the world from a pandemic <br> WELL DONE! <br>choose difficulty to play again</div>
+    <div class="modal-lose"> you have failed to save the world <br> pandemic is on the loose <br>choose difficulty to try again</div>
+    <div class="game-box">
+
+
+        <div class="clock">
+            <table>
+                <tr>
+                    <td class="menu score">---</td>
+                    <td class="menu face">😷</td>
+                    <!-- <td class="menu countdown "><span>02:00</span></td> -->
+                    <td class="menu timer"><span class="countdown countup">00:00</span></td>
+                    
+                </tr>
+                <tr></tr>
+                <tr></tr>
+            </table>
+        </div>
+        
+        <table class="game-table">
+        </table>
+        <div class="life"></div>
+    </div>
+    
+
+
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top left, #214f941c, black, #000000);
+    background-size: cover;
+    height: 1250px;
+    background-color: rgb(27, 25, 25);
+    text-align: center;
+
+}
+
+table {
+    margin: auto;
+    padding-top: 20px;
+}
+
+td.game {
+    border: 1px rgba(255, 255, 255, 0.219) solid;
+    width: 40px;
+    height: 40px;
+    background: rgb(0, 0, 0);
+    background-image: linear-gradient(to top left, #9cc5a11c, #000000);
+
+}
+
+
+td.game:hover {
+    border: 1px rgba(255, 255, 255, 0.219) solid;
+    width: 40px;
+    height: 40px;
+    background: rgb(54, 54, 54);
+
+}
+
+
+td.game:active {
+    border: 1px rgba(255, 255, 255, 0.219) solid;
+    width: 40px;
+    height: 40px;
+    background: #9cc5a11c
+}
+
+.hidden span {
+    display: none;
+}
+
+td.shown {
+    background: #9CC5A1
+}
+
+td.shown span {
+    display: inline;
+}
+
+td.flagged {
+    /* background-image: url("mask.png"); */
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 20px;
+
+}
+
+td.menu {
+    border: 3px rgba(255, 255, 255, 0.089) solid;
+    width: 150px;
+    height: 50px;
+
+}
+
+td.face {
+    font-size: 30px;
+}
+
+td.timer {
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    color: rgb(143, 3, 3);
+}
+
+.game-box {
+    margin: auto;
+    border: 3px solid rgba(255, 255, 255, 0.048);
+    width: 500px;
+    height: 630px;
+}
+
+#mine {
+    background-color: #000000;
+    background-image: url(covid-mine.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.difficulty button {
+    color: silver;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px rgb(104, 104, 104) solid;
+    background-image: linear-gradient(to top left, #000000c4, #10162bd3, black);
+}
+.difficulty button:hover {
+    color: silver;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px rgb(104, 104, 104) solid;
+    background-image: linear-gradient(to top left, #000000c4, #318838d3, black);
+}
+
+.life {
+    word-spacing: 80px;
+    margin: auto;
+    width: 300px;
+    border: 1px rgba(255, 255, 255, 0.082) solid;
+}
+
+.shown.mine {
+    background-color: rgb(148, 42, 42);
+    background-image: url(covid-mine.png);
+    transition: 0.5s;
+    font-size: 0px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.syring {
+    font-size: 0px;
+}
+
+.score {
+    color: white;
+}
+
+td.countdown {
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    color: rgb(143, 3, 3);
+}
+
+.modal-win {
+    opacity: 0;
+    transition: 0.5s;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    width: 500px;
+    height: 90px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 720px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-image: linear-gradient(to top left, #1a251d31, #10162b93);
+
+}
+
+.modal-lose {
+    opacity: 0;
+    transition: 0.5s;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    width: 500px;
+    height: 90px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 720px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-image: linear-gradient(to top left, #1a251d31, #9c4242b2);
+
+}
